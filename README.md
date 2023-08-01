@@ -1,5 +1,6 @@
 # Node.js Discord Bot for Webhook Integration
 [![License](https://img.shields.io/github/license/xd12r/Node.js-WordPress-to-Discord?color=green)](https://github.com/xd12r/Node.js-WordPress-to-Discord/blob/main/LICENSE)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/xd12r/Node.js-WordPress-to-Discord/nodejs.yml)](https://github.com/xd12r/Node.js-WordPress-to-Discord/actions)
 
 This project provides a Node.js Discord bot that receives HTTP POST requests containing data about newly published posts on a WordPress website and sends it to a specified Discord channel. This enables real-time updates to be sent to a Discord server when new content is published on a WordPress site.
 
