@@ -1,4 +1,5 @@
 # Node.js Discord Bot for Webhook Integration
+[![License](https://img.shields.io/github/license/xd12r/Node.js-WordPress-to-Discord?color=green)](https://github.com/xd12r/Node.js-WordPress-to-Discord/blob/main/LICENSE)
 
 This project provides a Node.js Discord bot that receives HTTP POST requests containing data about newly published posts on a WordPress website and sends it to a specified Discord channel. This enables real-time updates to be sent to a Discord server when new content is published on a WordPress site.
 
@@ -22,10 +23,13 @@ This project provides a Node.js Discord bot that receives HTTP POST requests con
 2. Set your WordPress webhook to point to the URL of your server where the bot is running, followed by '/webhook' (e.g., `http://myserver.com:3000/webhook`).
 3. Publish a post on your WordPress site. The bot will receive the data, format a message, and send it to the specified Discord channel.
 
+## Project that works together
+
+| Name  | Release |
+| ------------- | ------------- |
+| [Discord Bot](https://github.com/xd12r/Node.js-WordPress-to-Discord)  | [![Bot Release](https://img.shields.io/github/v/release/xd12r/Node.js-WordPress-to-Discord)](https://github.com/xd12r/Node.js-WordPress-to-Discord/releases)  |
+| [Wordpress Plugin](https://github.com/xd12r/Wordpress-xDr-Webhook)  | [![Plugin Release](https://img.shields.io/github/v/release/xd12r/Wordpress-xDr-Webhook)](https://github.com/xd12r/Wordpress-xDr-Webhook/releases)  |
+
 ## Code Overview
 
 The bot uses the Discord.js library to interact with the Discord API. It sets up an Express.js server to listen for incoming HTTP POST requests. When it receives a request, it logs the headers and body, formats a message, and sends it to the specified Discord channel. If a URL to a thumbnail image is provided in the request body, it downloads the image, attaches it to the message, and then sends it to the channel.
-
-## License
-
-Distributed under the GNU GPLv3 License. See `LICENSE` for more information.
